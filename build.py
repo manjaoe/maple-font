@@ -1040,6 +1040,7 @@ def update_font_names(
     # Why: https://github.com/ryanoasis/nerd-fonts/discussions/891#discussioncomment-3471991
 
     family_name = family_name.replace("Maple Mono NL NFMono CN", "Maple Mono")
+    full_name = full_name.replace("Maple Mono NL NFMono CN", "Maple Mono")
     f"⚠️ The family name [{family_name}]"
     if len(family_name) > 31:
         print(
