@@ -1039,7 +1039,8 @@ def update_font_names(
     # Reported in #598
     # Why: https://github.com/ryanoasis/nerd-fonts/discussions/891#discussioncomment-3471991
 
-    f"⚠️show params family_name:[{family_name}]  style_name:[{style_name}] unique_identifier:[{unique_identifier}]  full_name:[{full_name}]  version_str:[{version_str}] postscript_name:[{postscript_name}] preferred_family_name:[{preferred_family_name}] preferred_style_name:[{preferred_style_name}]"
+    family_name = family_name.replace("Maple Mono NL NFMono CN", "Maple Mono")
+    f"⚠️ The family name [{family_name}]"
     if len(family_name) > 31:
         print(
             f"⚠️ The family name [{family_name}] is too long (> 31) for some old Windows softwares"
